@@ -1,6 +1,6 @@
 # ECOPlugs
 
-Communicate with ECOPlugs/Wion Woods WiFi-connected outlets. Read the state of any plug(s) and turn them on/off.
+Communicate with ECOPlugs/Wion Woods WiFi-connected outlets. Read the state of plugs and turn them on/off.
 
 # Installation
 
