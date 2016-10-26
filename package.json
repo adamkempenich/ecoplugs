@@ -1,7 +1,7 @@
 {
   "name": "ecoplugs",
   "version": "0.1.0",
-  "description": "Interface for ECO Plugs by KAB",
+  "description": "Interface for ECOPlugs WiFI connected outlets",
   "license": "ISC",
   "repository": {
     "type": "git",
