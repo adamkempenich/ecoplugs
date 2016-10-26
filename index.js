@@ -16,7 +16,7 @@ EcoPlugGroup.prototype.setPowerState = function (thisPlug, powerState, callback)
         if (!err) {
             console.log("Setting %s switch with ID %s to: %s", thisPlug.name, thisPlug.id, (powerState ? "ON" : "OFF"));
         }
-        callback(err, null);
+        if (callback) callback(err, null);
     }.bind(this));
 
 }
@@ -33,7 +33,7 @@ EcoPlugGroup.prototype.getPowerState = function (thisPlug, callback) {
             status = this.readState(message);
             console.log("Status of %s switch with ID %s is: %s", thisPlug.name, thisPlug.id, (status ? "ON" : "OFF"));
         }
-        callback(err, status);
+        if (callback) callback(err, status);
     }.bind(this));
 
 }
