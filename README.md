@@ -55,3 +55,6 @@ Example configuation object:
 | host     | Hostname or IP of the EcoPlug                                      | Yes |
 | port     | Port used by the EcoPlug (defaults to 80)                          | No  |
 | id       | The id of the EcoPlug as shown in the ECO app under settings       | Yes |
+
+# License
+ISC
