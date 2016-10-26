@@ -13,14 +13,15 @@ Reading plug on/off status:
 var plugs = new EcoPlugGroup(config); // config object described below
 
 plugs.getPowerState(config.plugs[0], (err, state) => {
-  console.log(state); // true === on, false === off
+  if (err) console.log("ERROR: ", err);
+  else console.log(state ? "ON" : "OFF");
 });
 ```
 Turn plug on or off:
 ```
 var newState = true; // truthy for on, falsey for off
 
-plugs.setPowerState(config.plugs[0], state, (err) => {
+plugs.setPowerState(config.plugs[0], newState, (err) => {
   if (err) console.log(err);
 });
 ```
